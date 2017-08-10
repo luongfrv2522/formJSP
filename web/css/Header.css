@@ -1,0 +1,14 @@
+#logo_lmht{
+    display: block;
+    width: 338px;
+    height: 115px;
+    position: relative;
+    top: 0;
+    left: 50%;
+    margin-left: -171px;
+    z-index: 3;
+    text-align: center;
+    overflow: hidden;
+    opacity: 1;
+    outline: 0;
+   }
