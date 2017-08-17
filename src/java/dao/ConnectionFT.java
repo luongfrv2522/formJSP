@@ -20,7 +20,12 @@ import java.util.logging.Logger;
 public class ConnectionFT {
     private static Connection conn;
     private static String ClassName = "com.mysql.jdbc.Driver";
-    private static String url = "jdbc:mysql://localhost:3306/dbweblol";
+   // localhost 
+//   private static String url = "jdbc:mysql://node182505-hidingme.jelastic.servint.net/dbweblol";
+//   private static String user = "root";
+//   private static String pass = "OQEaqp34720";
+   // web localhost
+   private static String url = "jdbc:mysql://localhost:3306/dbweblol";
    private static String user = "USER1";
    private static String pass = "123456";
     public static Connection getConnection(){

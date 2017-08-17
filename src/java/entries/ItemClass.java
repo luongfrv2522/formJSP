@@ -58,4 +58,8 @@ public class ItemClass {
     }
     
     //Functions
+    public static void main(String[] args) {
+        ItemClass iic=new ItemClass("1234","sda","sd","xcz");
+        
+    }
 }
