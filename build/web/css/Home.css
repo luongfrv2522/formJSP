@@ -20,7 +20,7 @@ body{
 }
 
 .section-wrapper-content{
-	padding-left: 10px;
+	padding: 44px;
 	max-width: 1024px;
 	margin: -75px auto auto auto;
 	background: url('https://lienminh.garena.vn/templates/lmht_2013/images/frame-center.png') repeat-y 50% 0;
@@ -28,7 +28,7 @@ body{
 .container-item .ul{
 	position: relative;
 	z-index: 1;
-	padding-left: 25px;
+	
 	
 	display: -webkit-inline-box;
 	margin: 10px;
@@ -46,4 +46,18 @@ body{
 .section-wrapper-bottom{
 	height: 130px;
 background: transparent url('https://lienminh.garena.vn/templates/lmht_2013/images/frame-sprite.png') no-repeat 50% -284px;
+}
+
+.group {
+    position: relative;
+    min-height: 150px;
+    border: 2px solid;
+    
+}
+.group_item{
+    position: relative;
+    display: -webkit-inline-box;
+    margin: 25px;
+    font-size: large;
+
 }

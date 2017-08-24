@@ -6,9 +6,9 @@
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-<html>
+
     <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        
         <title>Navigation Bar</title>
         <style type="text/css">
         	nav{
@@ -16,7 +16,6 @@
         	}
         </style>
     </head>
-    <body>
         <nav class="navbar navbar-inverse navbar-fixed-top">
         
         	<div class="navbar-header">
@@ -41,5 +40,3 @@
 			</div>        	
        
         </nav>
-    </body>
-</html>

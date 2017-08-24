@@ -5,7 +5,7 @@
  */
 package dao;
 
-import entries.ItemClass;
+import entity.ItemClass;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -55,7 +55,7 @@ public class ListItem extends LinkedList<ItemClass>{
     public static void main(String[] args) {
         //ListItem it=new ListItem();
         ListItem st= new ListItem(true);
-        
-        System.out.println(st.get(1).getLink()+" | "+st.get(1).getName()+" | "+st.get(1).getDesn());
+        System.out.println(st.size());
+       // System.out.println(st.get(1).getLink()+" | "+st.get(1).getName()+" | "+st.get(1).getDesn());
     }
 }

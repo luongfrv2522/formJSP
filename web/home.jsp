@@ -4,7 +4,12 @@
     Author     : UserAdmin
 --%>
 
-<%@page import="entries.ItemClass"%>
+
+<%@page import="entity.TypeItem"%>
+<%@page import="business.ListTypeItem"%>
+<%@page import="entity.TypeGroup"%>
+<%@page import="business.ListTypeGroup"%>
+<%@page import="entity.ItemClass"%>
 <%@page import="dao.ListItem"%>
 <%@page import="java.util.ArrayList"%>
 
@@ -13,7 +18,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <link rel="stylesheet" href="css/Home.css">
         <title>Home Page</title>
         <link rel="stylesheet" href="css/Header.css">
@@ -32,9 +37,6 @@
                 });
                 
             });
-                
-               
-            
 
         </script>
         <script src="js/main.js"></script>
@@ -69,10 +71,24 @@
             .header{
                 margin-top: 65px;
             }
+            
+            .info img{
+               margin-bottom:5px;
+            }
+            .info .cost{
+               color:#ecec50;
+            }
+            .name {
+                color: #ccc6c6;
+            }
         </style>
     </head>
     <body>
-        <%ListItem st= new ListItem(true);%>
+        <%
+            ListTypeItem listTI= new ListTypeItem();
+            ListItem st= new ListItem(true);
+            ListTypeGroup lgr= new ListTypeGroup();
+        %>
         <%@include file="/common/Navbar.jsp"%>
         <%@include file="/common/Header.jsp"%>
         
@@ -80,12 +96,26 @@
             <div class="section-wrapper-top"></div>
             <div class="section-wrapper-content">
                 <div class="container-item">
+                    <div class="group">
+                        <%for(int j=0;j<5;j++){%>  
+                        <div class="group_item">
+                             <%for(TypeGroup tg:lgr.setList()){
+                                 int GR=Integer.parseInt(tg.getGroupType());
+                                 if(GR==j){
+                             %> 
+                            <input type="checkbox" name="group_name" value="<%=tg.getMaTypeGroup()%>"><%=tg.getNameType()%><br>
+                            <%}};%>
+                        </div>
+                        <%};
+                            String a=request.getParameter("group_name");
+                        %>
+                    </div>
                     <div class="ul">
-                        <%for(ItemClass IC:st){%>
-                        <ul class="item">
+                        <%for(ItemClass IC:st) {%>
+                        <ul class="item" typeItem="<%=listTI.getTypeItem(IC.getLink())%>">
                             <li><a href=""><img src="https://lienminh.garena.vn/images/item/<%=IC.getLink()%>.png"></a></li>
                             <li class="info">
-                                 <a href=""><img src="https://lienminh.garena.vn/images/item/<%=IC.getLink()%>.png"></a>
+                                <img src="https://lienminh.garena.vn/images/item/<%=IC.getLink()%>.png""><br>
                                  <p class="name"><%=IC.getName()%></p>
                                  <%=IC.getDesn()%>
                                  <p class="cost">Cost: <%=IC.getCost()%></p>
@@ -104,6 +134,13 @@
         <!-- Các file js -->
 
         <script src="js/bootstrap.js"></script>
+        <script type="text/javascript">
+            var listIC=new itemClass();
+            var i=0;
+            <%%>
+                
+        </script>
+        
         
     </body>
 </html>
