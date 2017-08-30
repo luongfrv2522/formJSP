@@ -5,6 +5,7 @@
  */
 package dao;
 
+import db.ConnectionFT;
 import entity.ItemClass;
 
 import java.sql.Connection;

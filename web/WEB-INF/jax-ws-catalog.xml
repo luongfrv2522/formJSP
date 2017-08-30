@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="http://localhost:8080/Webservice_server/fullAPIutil?wsdl" uri="wsdl/localhost_8080/Webservice_server/fullAPIutil.wsdl"/>
+    <system systemId="http://localhost:8080/Webservice_server/fullAPIutil?xsd=1" uri="wsdl/localhost_8080/Webservice_server/fullAPIutil.xsd_1.xsd"/>
+    <system systemId="http://webservice.jelastic.servint.net/Webservice/fullAPIutil?wsdl" uri="wsdl/webservice.jelastic.servint.net/Webservice/fullAPIutil.wsdl"/>
+    <system systemId="http://localhost:8080/wWSdm/NewWS?wsdl" uri="wsdl/localhost_8080/wWSdm/NewWS.wsdl"/>
+    <system systemId="http://localhost:8080/wWSdm/NewWS?xsd=1" uri="wsdl/localhost_8080/wWSdm/NewWS.xsd_1.xsd"/>
+    <system systemId="http://webservice.jelastic.servint.net/Webservice/NewWS?wsdl" uri="wsdl/webservice.jelastic.servint.net/Webservice/NewWS.wsdl"/>
+    <system systemId="http://webservice.jelastic.servint.net:80/Webservice/NewWS?xsd=1" uri="wsdl/webservice.jelastic.servint.net_80/Webservice/NewWS.xsd_1.xsd"/>
+</catalog>

@@ -5,8 +5,8 @@
  */
 package entity;
 
-import business.ListTypeGroup;
-import dao.ConnectionFT;
+import dao.ListTypeGroup;
+import db.ConnectionFT;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;

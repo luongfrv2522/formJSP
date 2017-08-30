@@ -28,7 +28,7 @@ $(document).ready(function() {
     	else{
     		for(var i=0;i<list.length;i++){
     			if(list[i]==val){
-    				list.pop(i);
+    				list.splice(i,1);
     			}
     		}
     	}
@@ -46,12 +46,12 @@ $(document).ready(function() {
     	});
     	//alert(list);
     });
-
+    
 });	
 
 function checkMutiGroupType(listType,list){
 	for (var i = list.length - 1; i >= 0; i--) {
-		var checkPos=parseInt(listType.indexOf(" "+list[i]+" "));
+		var checkPos=parseInt(listType.search(" "+list[i]+" "));
 		if(checkPos<0){
 			return false;
 		}

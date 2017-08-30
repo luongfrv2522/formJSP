@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="http://localhost:8080/Webservice_server/fullAPIutil?xsd=1" uri="src/conf/xml-resources/web-service-references/fullAPIutil/wsdl/localhost_8080/Webservice_server/fullAPIutil.xsd_1.xsd"/>
+    <system systemId="http://webservice.jelastic.servint.net/Webservice/fullAPIutil?wsdl" uri="src/conf/xml-resources/web-service-references/fullAPIutil/wsdl/webservice.jelastic.servint.net/Webservice/fullAPIutil.wsdl"/>
+    <system systemId="http://localhost:8080/Webservice_server/fullAPIutil?wsdl" uri="src/conf/xml-resources/web-service-references/fullAPIutil/wsdl/localhost_8080/Webservice_server/fullAPIutil.wsdl"/>
+    <system systemId="http://localhost:8080/wWSdm/NewWS?wsdl" uri="src/conf/xml-resources/web-service-references/NewWS/wsdl/localhost_8080/wWSdm/NewWS.wsdl"/>
+    <system systemId="http://localhost:8080/wWSdm/NewWS?xsd=1" uri="src/conf/xml-resources/web-service-references/NewWS/wsdl/localhost_8080/wWSdm/NewWS.xsd_1.xsd"/>
+    <system systemId="http://webservice.jelastic.servint.net/Webservice/NewWS?wsdl" uri="src/conf/xml-resources/web-service-references/NewWS/wsdl/webservice.jelastic.servint.net/Webservice/NewWS.wsdl"/>
+    <system systemId="http://webservice.jelastic.servint.net:80/Webservice/NewWS?xsd=1" uri="src/conf/xml-resources/web-service-references/NewWS/wsdl/webservice.jelastic.servint.net_80/Webservice/NewWS.xsd_1.xsd"/>
+</catalog>

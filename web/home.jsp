@@ -6,9 +6,9 @@
 
 
 <%@page import="entity.TypeItem"%>
-<%@page import="business.ListTypeItem"%>
+<%@page import="dao.ListTypeItem"%>
 <%@page import="entity.TypeGroup"%>
-<%@page import="business.ListTypeGroup"%>
+<%@page import="dao.ListTypeGroup"%>
 <%@page import="entity.ItemClass"%>
 <%@page import="dao.ListItem"%>
 <%@page import="java.util.ArrayList"%>
@@ -97,7 +97,7 @@
             <div class="section-wrapper-content">
                 <div class="container-item">
                     <div class="group">
-                        <%for(int j=0;j<5;j++){%>  
+                        <%for(int j=1;j<=5;j++){%>  
                         <div class="group_item">
                              <%for(TypeGroup tg:lgr.setList()){
                                  int GR=Integer.parseInt(tg.getGroupType());
@@ -134,12 +134,6 @@
         <!-- Các file js -->
 
         <script src="js/bootstrap.js"></script>
-        <script type="text/javascript">
-            var listIC=new itemClass();
-            var i=0;
-            <%%>
-                
-        </script>
         
         
     </body>
